@@ -5,24 +5,39 @@
     <meta charset="utf-8">
     <style>
         a:visited {
-            color: red;
+            color: whitesmoke;
+        }
+        .nav {
+            text-decoration: none;
+            background-color: #66a3ff;
+            padding: 10px;
+            font-family: 'Courier New';
+        }
+        header {
+            text-align: center;
+            margin: 20px auto;
+            background-color: #e6e6e6;
+            width: 50%;
+            padding: 30px;
+            font-family: "Courier New";
         }
     </style>
 </head>
 <body>
+    <!--Navigation bar-->
     <div style="text-align: right;">
-        <a href="index.html" style="text-decoration: none;">Home</a>
-        <a href="tags.html" style="margin-left: 10px; text-decoration: none;">HTML Tags</a>
-        <a href="moby_dick.html" style="margin-left: 10px; text-decoration: none;">Moby Dick</a>
+        <a href="index.html" class="nav">Home</a>
+        <a href="tags.html" class="nav" style="margin-left: 10px;">HTML Tags</a>
+        <a href="moby_dick.html" class="nav" style="margin-left: 10px;">Moby Dick</a>
     </div>
-
-    <header style="text-align: center; margin: 0 0 80px;">
+    <!--Headers-->
+    <header>
         <h1>A Softcover Book Report</h1>
         <h2>Moby-Dick (or, The Whale)</h2>
     </header>
-
-    <div>
-        <p>
+    <!--Text and image of sperm whales-->
+    <div style="width: 50%; margin: 20px auto; background-color: #e6e6e6; padding: 30px;">
+        <p style="text-align: center; margin: 20px; font-family: 'Courier New';">
             The <a href="http://www.softcover.io/">Softcover</a> publishing platform
             was designed mainly for ebooks like the
             <a href="http://railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
@@ -33,50 +48,51 @@
             short and affectionately irreverent book report on this classic of
             American literature.
         </p>
-    </div>
-
-    <a href="https://commons.wikimedia.org/wiki/File:Sperm_whale_pod.jpg">
-        <img src="images/sperm_whales.jpg" alt="sperm whales" style="margin: 0 auto; display: block;">
-    </a>
-
-    <div style="width: 500px; margin: 20px auto; padding: 30px; background-color: #e6e6e6;">
-
-        <h3>Moby-Dick: A classic tale of the sea</h3>
-
-        <a href="https://www.softcover.io/read/6070fb03/moby-dick"
-           target="_blank">
-            <img src="images/moby_dick.png" alt="Moby Dick" style="height: 200px; float: left; margin-right: 40px;">
+        <a href="https://commons.wikimedia.org/wiki/File:Sperm_whale_pod.jpg">
+            <img src="images/sperm_whales.jpg" alt="sperm whales" style="margin: 30px auto; display: block;">
         </a>
+    </div>
+    <!--Last section-->
+    <div style="width: 50%; margin: 20px auto; padding: 30px; background-color: #e6e6e6;">
 
-        <p>
-            <a href="https://www.softcover.io/read/6070fb03/moby-dick"
-               target="_blank">
-                <em>Moby-Dick</em></a>
-            by Herman Melville begins with these immortal words:
-        </p>
+        <h3 style="padding-bottom: 5px; text-align: center;">Moby-Dick: A classic tale of the sea</h3>
 
-        <blockquote style="font-style: italic; font-size: 20px;">
-            <p>
-                <span style="font-style: normal; font-size: 24px; font-weight: bold; color: #3399ff;">
-                    Call me Ishmael.
-                </span>
-                Some years ago–never mind how long
-                precisely–having little or no money in my purse, and nothing
-                particular to interest me on shore, I thought I would sail about a
-                little and see the watery part of the world. It is a way I have of
-                driving off the spleen and regulating the circulation.
-            </p>
-        </blockquote>
+        <!--Book section-->
+        <div>
+            <a href="https://www.softcover.io/read/6070fb03/moby-dick" target="_blank">
+                <img src="images/moby_dick.png" alt="Moby Dick" style="height: 200px; float: left; margin: 0 20px 20px 0;">
+            </a>
+            <!--Text part-->
+            <div style="padding: 1px 0 10px 0;">
+                <p style="font-family: 'Courier New';">
+                    <a href="https://www.softcover.io/read/6070fb03/moby-dick"
+                       target="_blank">
+                        <em>Moby-Dick</em></a>
+                    by Herman Melville begins with these immortal words:
+                </p>
+                <blockquote style="font-style: italic; font-size: 20px;">
+                    <p>
+                    <span style="font-style: normal; font-size: 24px; font-weight: bold; color: #3399ff;">
+                        Call me Ishmael.
+                    </span>
+                        Some years ago–never mind how long
+                        precisely–having little or no money in my purse, and nothing
+                        particular to interest me on shore, I thought I would sail about a
+                        little and see the watery part of the world. It is a way I have of
+                        driving off the spleen and regulating the circulation.
+                    </p>
+                </blockquote>
+            </div>
+        </div>
 
-        <p>
+        <p style="font-family: 'Courier New'; clear: left;">
             After driving off his spleen (which <em>can't</em> be good for you),
             Ishmael then goes on in much the same vein for approximately one
             jillion pages. The only thing bigger than Moby Dick (who—<em>spoiler
             alert!</em>—is a giant white whale) is the book itself.
         </p>
-
+        <!--Lists section-->
         <h4>My top 3 favorite things about Moby Dick</h4>
-
         <ol>
             <li>Vengeful whale</li>
             <li>Salty sailors</li>
@@ -84,7 +100,6 @@
         </ol>
 
         <h4>Other things about Moby Dick</h4>
-
         <ul>
             <li>
                 Chapter after chapter (after chapter) of meticulous detail about
